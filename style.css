@@ -34,7 +34,7 @@ p{
   font-family: 'Bad Script', cursive;
 }
 
-@media only screen and (max-width: 800px){
+@media (max-width: 800px){
   .filler-pic{
      display: none;
   }
