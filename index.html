@@ -1,0 +1,141 @@
+<html>
+   <head>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Sketch:700|Vibur" rel="stylesheet">   </head>
+   <body>
+     <div class="nav-bar">
+       <div id="classes-link" class="nav-link">Classes</div>
+       <div id="about-link" class="nav-link">About</div>
+       <div id="blog-link" class="nav-link">Blog</div>
+       <div id="gallery-link" class="nav-link">Gallery</div>
+     </div>
+     <div class="main">
+       <div class="header"> Yoga <span class="slightly-smaller">with</span> Alissa
+       </div>
+
+       <div class="img-banner">
+          <img src="./img/warrior_front_crop.jpg" alt="Warrior 2" class="intro-pic filler-pic"/>
+          <img src="./img/strike_a_pose_crop.jpg" alt="Happy Dance" class="intro-pic"/>
+          <img src="./img/warrior_side_crop.jpg" alt="Warrior 3" class="intro-pic flip filler-pic"/>
+       </div>
+       <p class="centered"> I teach yoga to laugh, heal, and continue to grow with my fellow humans.</p>
+       <div id="classes" class="light-back content-section">
+       <h2 class="blue">Classes</h2>
+       <h3>Yoga in the park!</h3>
+       <p> Everyone is welcome!  I teach a free class every week in the the city in South Park (see full calendar below for up-to-date schedule).
+       <p> Classes are playful and focused on alignment. We'll work step by step through all categories of poses including backbends and inversions in a way that approachable for everyone. All levels are welcome from experienced yogis to yoga first-timers! </p>
+
+       <h3>Private Sessions</h3>
+       <p>I'm happy to instruct private sessions, for more information please reach out to me at classes@alissa.yoga</p>
+
+        <h3>Full Schedule</h3>
+        You can view my full schedule of upcoming classes <a href="https://calendar.google.com/calendar/embed?src=jqn4t6n1a8p8dae70c8ofhbmoc%40group.calendar.google.com&ctz=America%2FLos_Angeles">here</a>.
+
+       </div>
+
+
+       <div id="about-me" class="dark-back con content-section">
+       <h2>About Me</h2>
+       <p>Hey, my name is Alissa!
+           <p>As a yoga teacher I hope to support any and all humans on this oh so beautiful and challenging journey of life.
+              I aim to inspire, and allow healing and transformation at their own pace.
+              My classes focus on cretaing space for everyone to experiment, make mistakes, learn a whole bunch, and hopefully find a way to look inward and explore.
+              I seek to inspire not just the practice on the mat, but also the parts that can contribute to a happier and healthier life in both body and mind.
+          </p>
+
+       <h3> Training </h3>
+       <p class='title'><b>YogaWorks 200 Hour Teacher Training</b>  January - June 2018</p>
+       <p>
+       <small>I recently became an officially certified yoga teacher by completing YogaWorks 200 Hour Teacher Training in Walnut Creek.  I studied under two amazing senior teachers and learned the foundation of human anatomy, alignment, benefits, and risks of asana (poses), as well as the traditional yoga philosophy focusing on Patanjali's Sutras.</small>
+       </p>
+
+       <p class='title'> <small> staring soon</small> <b>YogaWorks 300 Hour Teacher Training</b> September 2018 - March 2019 </p>
+       <p>
+       <small>I'll be starting a 150 hour apprenticeship with an incredible spirit, Melanie Salvatore-August, in September.  In addition, I get to dive deeper into the subtle body, philosophy, asana, and teaching skills with teachers all around the Bay Area.</small>
+
+       <p>A shoutout to those who inspire me on the regular, my amazing teachers:
+          <ul>
+            <li> <a href="https://www.melaniesalvatoreaugust.com/">Melanie Salvatore-August</a></li>
+            <li> <a href="http://www.inner-revolution-yoga.com/mynx.html">Mynx Inatsugu </a></li>
+            <li> <a href="https://www.weslinchyoga.com/">Wes Linch</a></li>
+          </ul>
+        </p>
+
+     </div>
+
+     <div id="blog" class="light-back content-section">
+     <h2 class="blue">Blog</h2>
+     <p> Weekly writings coming soon!</p>
+     </div>
+
+     <div id="gallery" class="dark-back con content-section">
+     <h2>Gallery</h2>
+        <div class="gallery-container">
+          <div class="img-container">
+             <img src="./img/warrior_back.jpg" class="gallery-pic"/>
+             <div class="gallery-hover">
+                <div class="text">Warrior 2</div>
+              </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/warrior_front.jpg" class="gallery-pic"/>
+            <div class="gallery-hover">
+               <div class="text">Warrior 2</div>
+             </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/warrior_side_crop.jpg" class="gallery-pic"/>
+            <div class="gallery-hover">
+               <div class="text">Warrior 3</div>
+             </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/gallery/yogi-crew.jpeg" class="gallery-pic"/>
+            <div class="gallery-hover">
+               <div class="text">200 Hour TT Crew</div>
+             </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/gallery/yogi-friends.jpeg" class="gallery-pic" style="
+                transformY: 90px;
+                transform: rotate(90deg);
+            ">
+            <div class="gallery-hover">
+               <div class="text">Back Row Besties</div>
+             </div>
+          </div>
+          <div class="img-container">
+            <img src="./img/strike_a_pose_crop.jpg" class="gallery-pic"/>
+            <div class="gallery-hover">
+               <div class="text">Happy Dance</div>
+             </div>
+          </div>
+        </div>
+     </div>
+
+   </body>
+   <script>
+    document.getElementById('about-link').addEventListener('click', function(){
+      document.querySelector('#about-me').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    document.getElementById('classes-link').addEventListener('click', function(){
+      document.querySelector('#classes').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    document.getElementById('blog-link').addEventListener('click', function(){
+      document.querySelector('#blog').scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+    document.getElementById('gallery-link').addEventListener('click', function(){
+      document.querySelector('#gallery').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    });
+
+   </script>
+</html>

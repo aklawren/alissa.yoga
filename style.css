@@ -1,0 +1,139 @@
+.img-banner{
+  display: flex;
+  justify-content: space-around;
+}
+.intro-pic {
+  height: 250px;
+  border-radius: 8px;
+  border-radius: 10px;
+  padding: 5px;
+  filter: sepia(100%);
+  filter: opacity(70%);
+}
+.flip{
+  transform: scaleX(-1);
+}
+body{
+  font-family: 'Cabin Sketch', cursive;
+  background-color: rgb(143,193,199, .3);
+  margin: 0px;
+}
+.header{
+  //font-size:11em;
+  font-size:10vw;
+  color:#424242;
+  text-align: center;
+  margin-top :40px;
+  margin-bottom:20px;
+}
+.slightly-smaller{
+  //font-size:120px;
+  font-size:8vw;
+}
+p{
+  font-family: 'Bad Script', cursive;
+}
+
+@media only screen and (max-width: 800px){
+  .filler-pic{
+     display: none;
+  }
+  .intro-pic{
+    width: 80%;
+    height: auto;
+    align-self: center;
+  }
+  h2{
+    background-color: rgb(143,193,199, .4);
+    padding:0px;
+    text-align: center;
+  }
+}
+
+.nav-bar {
+    height: 40px;
+    background-color: rgb(143,193,199, .4);
+//    background-color: #8fc1c7;
+    margin: 0px;
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Vibur', cursive;
+    text-transform: uppercase;
+}
+.nav-link{
+      text-decoration: none;
+      height: auto;
+      margin: auto;
+      color: black;
+  }
+h2{
+  font-size: 40px;
+  margin-top:0px;
+}
+.centered{
+  text-align: center;
+}
+.light-back{
+  background-color: #fbfbfb;
+}
+.dark-back{
+  //background-color: rgb(143,193,199, .4);
+}
+.blue{
+    color: #8fc1c7;
+}
+.content-section{
+  padding-top: 50px;
+  padding-bottom:100px;
+  padding-left:50px;
+  padding-right:50px;
+}
+ul{
+  list-style:none;
+}
+.img-container{
+  width:400px;
+  height:400px;
+  line-height: 400px;
+  display:flex;
+  justify-content: center;
+  position:relative;
+}
+.gallery-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gallery-pic {
+  width: 100%;
+  opacity: 1;
+  border-radius: 10px;
+  object-fit: contain;
+  transition: .5s ease;
+  }
+
+.gallery-hover {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  font-size:3em;
+  width:100%
+}
+
+.img-container:hover .gallery-pic {
+  opacity: 0.3;
+}
+
+.img-container:hover .gallery-hover {
+  opacity: 1;
+}
+
+.title{
+  font-family: 'Vibur', cursive;
+  text-transform: uppercase;
+}
