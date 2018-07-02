@@ -92,9 +92,11 @@ ul{
   list-style:none;
 }
 .img-container{
-  width:400px;
-  height:400px;
-  line-height: 400px;
+  width: 100%
+  height:auto;
+  max-width:400px;
+  max-height:400px;
+  /*line-height: 400px;*/
   display:flex;
   justify-content: center;
   position:relative;
