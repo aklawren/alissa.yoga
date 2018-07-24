@@ -69,6 +69,7 @@ p{
       height: auto;
       margin: auto;
       color: black;
+      cursor: pointer;
   }
 h2{
   font-size: 40px;
