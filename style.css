@@ -184,4 +184,5 @@ ul{
   display: block;
   background: linear-gradient(to right, rgb(221, 214, 243), rgb(250, 172, 168));
   border-radius: 20px;
+  margin:10px;
 }
