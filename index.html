@@ -2,14 +2,15 @@
 <html lang="en">
    <head>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Sketch:700|Vibur" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Cabin+Sketch:700|Vibur|Noto+Serif+KR" rel="stylesheet">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
  </head>
    <body>
      <div class="nav-bar">
        <div id="classes-link" class="nav-link">Classes</div>
        <div id="about-link" class="nav-link">About</div>
-       <div id="reflections-link" class="nav-link">Reflections</div>
+       <div id="contact-link" class="nav-link">Contact</div>
+       <!--div id="reflections-link" class="nav-link">Reflections</div-->
        <div id="gallery-link" class="nav-link">Gallery</div>
      </div>
      <div class="main">
@@ -24,11 +25,17 @@
        <p class="centered"> I teach yoga to laugh, heal, and continue to grow with my fellow humans.</p>
        <div id="classes" class="light-back content-section">
        <h2 class="blue">Classes</h2>
-       <h3>Yoga in the park!</h3>
-       <p> Everyone is welcome!  I teach a free class every week in the the city in South Park (see full calendar below for up-to-date schedule).
-       <p> Classes are playful and focused on alignment. We'll work step by step through all categories of poses including backbends and inversions in a way that approachable for everyone. All levels are welcome from experienced yogis to yoga first-timers! </p>
+       <em> We're building a grassroots group of yoga nomads.  Whether it's your first time doing yoga or you've practiced for years, you're welcome to join in.  Drop-ins are always welcome (no pre-regitration is required), just bring yourself and a mat! </em>
 
-       <h3>Private Sessions</h3>
+       <p class='title'><b>Greet the Week Yoga </b></p>
+       <p class='title'> [Mondays 8:45-9:45am at Salesforce Park]</p>
+       <p> Join us outdoors for a little morning yoga to set up good intentions for the week ahead. Classes are typically a gentle vinyasa style flow that emphasize connection between body and breath.</p>
+
+       <p class='title'><b>Happy Hour Yoga </b> </p>
+       <p class='title'>[Mondays 5:30-6:30pm at Minna Gallery] </p>
+       <p> The kind folks at Minna are looking to support a community of all types of art for all types of people and have kindly opened their doors for a free vinyasa style class each Monday.</p>
+
+       <p class='title'><b>Private Sessions </b>  [scheduled accordingly]</p>
        <p>I'm happy to instruct private sessions, for more information please reach out to me at classes@alissa.yoga</p>
 
         <h3>Full Schedule</h3>
@@ -39,7 +46,7 @@
 
        <div id="about-me" class="dark-back con content-section">
        <h2>About Me</h2>
-       <p>Hey, my name is Alissa!
+       <p>Hi, my name is Alissa!
            <p>As a yoga teacher I hope to support any and all humans on this oh so beautiful and challenging journey of life.
               I aim to inspire, and allow healing and transformation at their own pace.
               My classes focus on creating space for everyone to experiment, make mistakes, learn a whole bunch, and hopefully find a way to look inward and explore.
@@ -52,9 +59,9 @@
        <small>I recently became an officially certified yoga teacher by completing YogaWorks 200 Hour Teacher Training in Walnut Creek.  I studied under two amazing senior teachers and learned the foundation of human anatomy, alignment, benefits, and risks of asana (poses), as well as the traditional yoga philosophy focusing on Patanjali's Sutras.</small>
        </p>
 
-       <p class='title'> <small> starting soon</small> <b>YogaWorks 300 Hour Teacher Training</b> September 2018 - March 2019 </p>
+       <p class='title'><b>YogaWorks 300 Hour Teacher Training</b> September 2018 - March 2019 </p>
        <p>
-       <small>I'll be starting a 150 hour apprenticeship with an incredible spirit, Melanie Salvatore-August, in September.  In addition, I get to dive deeper into the subtle body, philosophy, asana, and teaching skills with teachers all around the Bay Area.</small>
+       <small>I'm currently apprenticing with a senior teacher and incredible spirit, Melanie Salvatore-August.  In addition to regularly assisting in her classes, I'm continuing my studies of the subtle body and energetics, yogic philosophy, asana, and teaching skills with teachers all around the Bay Area.</small>
 
        <p>A shoutout to those who inspire me on the regular, my amazing teachers:
           <ul>
@@ -65,8 +72,15 @@
         </p>
 
      </div>
+     <div id="contact" class="light-back content-section">
+        <h2 class="blue">Contact</h2>
+        <p> Have questions or feedback? </p>
+        <p> Want to know more about what to expect? </p>
+        <p> Just feel like saying hello? </p>
 
-     <div id="reflections" class="light-back content-section">
+        <p><strong> I'd love to hear from you! Drop me a line anytime at  <a href="mailto:classes@alissa.yoga">classes@alissa.yoga</a></strong></p>
+     </div>
+     <!--div id="reflections" class="light-back content-section">
        <h2 class="blue">Reflections</h2>
        <p>This is where I'll share my take on how the gems from traditional yoga philosophy can be transposed in the modern time to live a happier and healthier life.  I'll add new writings (hopefully weekly) along with a free sequence that you can take to your own mat anytime anywhere.
        <div class="gallery-container">
@@ -84,7 +98,7 @@
            </a>
          </div>
        </div>
-     </div>
+     </div-->
 
      <div id="gallery" class="dark-back con content-section">
      <h2>Gallery</h2>
@@ -140,11 +154,16 @@
         behavior: 'smooth'
       });
     });
-    document.getElementById('reflections-link').addEventListener('click', function(){
-      document.querySelector('#reflections').scrollIntoView({
+    document.getElementById('contact-link').addEventListener('click', function(){
+      document.querySelector('#contact').scrollIntoView({
         behavior: 'smooth'
       });
     });
+    // document.getElementById('reflections-link').addEventListener('click', function(){
+    //   document.querySelector('#reflections').scrollIntoView({
+    //     behavior: 'smooth'
+    //   });
+    // });
     document.getElementById('gallery-link').addEventListener('click', function(){
       document.querySelector('#gallery').scrollIntoView({
         behavior: 'smooth',

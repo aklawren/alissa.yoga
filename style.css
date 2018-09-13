@@ -35,7 +35,7 @@ body{
   font-size:8vw;
 }
 p{
-  font-family: 'Bad Script', cursive;
+  font-family: 'Noto Serif KR', sans-serif
 }
 
 @media (max-width: 800px){
